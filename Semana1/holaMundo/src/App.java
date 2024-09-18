@@ -1,23 +1,35 @@
 
 import java.util.Scanner;
+import java.io.Console;
 
 public class App {
+
+	private static final int TAM = 3;
     public static void main(String[] args) throws Exception {
 
 		Scanner scanRef = new Scanner(System.in);
+
+		Console console = System.console();
+		String nombre = console.readLine("Ingrese su nombre: ");
+		char[] password = console.readPassword("Ingrese su password: ");
+
+		if(password.length < 8){
+			System.out.println("El password debe tener al menos 8 caracteres");
+			System.exit(0);
+		}
+
 		String frase = "Hola, Mundo!";
-		int[] num = new int[3];
+		int[] num = new int[TAM];
 		
 
         System.out.println("Hello, World!");
 		System.out.printf("%S hoy es  %d / %d / %d \n", frase, 18, 9 , 2024);
 		System.out.println("Ingrese su nombre: ");
-		String nombre = scanRef.nextLine();
 		System.out.println("Escriba su edad: ");
 		int edad = scanRef.nextInt();
 
 		System.out.println("su nombre es: " + nombre + " y su edad es: " + edad);
-		System.out.println("A continuacion se le pediran 3 numeros" + "\nSe le dira el mayor y el meno de ellos");
+		System.out.println("A continuacion se le pediran 3 numeros" + "\n\nSe le dira el mayor y el menor de ellos");
 
 		for (int i = 0; i < 3; i++) {
 			System.out.println("Ingrese el numero " + (i + 1) + ": ");
