@@ -44,5 +44,7 @@ public class App {
 		System.out.println("El numero menor es: " + num[0]);
 		System.out.println("El numero mayor es: " + num[num.length - 1]);
 
+		scanRef.close();
+
     }
 }
