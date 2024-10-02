@@ -25,15 +25,38 @@ public class App {
 	   Persona[] personas = new Persona[3];
 
 	   for (int i = 0; i < personas.length; i++) {
-		   personas[i] = new Persona();
+		   personas[i] = new Persona( "", "", "");
+
+		   //pedir el nombre de la persona
 		   String prompt = String.format("Introduce el nombre de la persona %d: ", i + 1);
 		   String nombre = Esdia.readString(prompt);
 		   personas[i].setNombre(nombre);
+
+		   //pedir el peso de la persona
+		   prompt = String.format("Introduce el peso de la persona %d: ", i + 1);
+		   String peso = Esdia.readString(prompt);
+		   personas[i].setPeso(peso);
+
+		   //pedir la altura de la persona
+		   prompt = String.format("Introduce la altura de la persona %d: ", i + 1);
+		   String altura = Esdia.readString(prompt);
+		   personas[i].setAltura(altura);
+
 	   }
 
 	   for (int i = 0; i < personas.length; i++) {
 		   System.out.println("Nombre: " + personas[i].getNombre());
+		   System.out.println("Peso: " + personas[i].getPeso());
+		   System.out.println("Altura: " + personas[i].getAltura());
 	   }
+	   
+	   String mayorPeso = Persona.getMayorPeso(personas);
+
+	   System.out.println("La persona con mayor peso es: " + mayorPeso);
+
+	   String mayorAltura = Persona.getMayorAltura(personas);
+
+	   System.out.println("La persona con mayor altura es: " + mayorAltura);
 
 	   
 	}
