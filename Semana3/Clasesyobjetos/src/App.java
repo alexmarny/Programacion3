@@ -22,9 +22,9 @@ public class App {
 
 	   //crea un array
 
-	   Persona[] personas = new Persona[3];
+	   Persona[] personas = new Persona[4];
 
-	   for (int i = 0; i < personas.length; i++) {
+	   for (int i = 0; i < personas.length - 1; i++) {
 		   personas[i] = new Persona( "", "", "");
 
 		   //pedir el nombre de la persona
@@ -43,6 +43,9 @@ public class App {
 		   personas[i].setAltura(altura);
 
 	   }
+
+	   //crea una persona con valores por defecto
+	   personas[3] = new Persona();
 
 	   for (int i = 0; i < personas.length; i++) {
 		   System.out.println("Nombre: " + personas[i].getNombre());

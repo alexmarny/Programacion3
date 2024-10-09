@@ -16,6 +16,14 @@ public class Persona {
 		this.altura = altura;
 	}
 
+	// Constructor sin parametros
+
+	public Persona() {
+		this.nombre = "Alejandro";
+		this.peso = "80";
+		this.altura = "175";
+	}
+
 	//Metodos
 
 	public static String getMayorPeso(Persona[] personas) {
@@ -40,6 +48,24 @@ public class Persona {
 			}
 		}
 		return mayorAltura;
+	}
+
+	public static String cacularIMC(Persona persona){
+
+		if(persona.getNombre().equals("")||persona.getPeso() == null || persona.getAltura() == null){
+			return "Faltan datos";
+		}
+		
+		try {
+			double peso = Double.parseDouble(persona.getPeso());
+			double altura = Double.parseDouble(persona.getAltura());
+
+			double imc = peso / (altura * altura);
+
+			return "El IMC de " + persona.getNombre() + " es: " + imc;
+		} catch (NumberFormatException e) {
+			return "El peso o la altura no son números válidos";
+		}
 	}
 
 
