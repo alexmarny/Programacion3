@@ -1,0 +1,13 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": {
+		"include": [
+			"lib/**/*.jar",
+			"/home/alex/Programacion3/biblioteca11.jar"
+		],
+		"exclude": [
+			"lib/biblioteca.jar"
+		]
+	}
+}

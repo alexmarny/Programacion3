@@ -6,6 +6,20 @@
 	"configurations": [
 		{
 			"type": "java",
+			"name": "Concesionario",
+			"request": "launch",
+			"mainClass": "concesionario.Concesionario",
+			"projectName": "Programacion3_b97d17a1"
+		},
+		{
+			"type": "java",
+			"name": "App",
+			"request": "launch",
+			"mainClass": "App",
+			"projectName": "Programacion3_b97d17a1"
+		},
+		{
+			"type": "java",
 			"name": "Current File",
 			"request": "launch",
 			"mainClass": "${file}"
