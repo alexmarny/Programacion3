@@ -2,7 +2,8 @@
     "java.project.sourcePaths": ["src"],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "/Volumes/ALUMNOS/ALUMNOS/**/*.jar"
-    ]
+		"lib/**/*.jar",
+		"/Volumes/ALUMNOS/ALUMNOS/**/*.jar",
+		"/home/alex/Programacion3/biblioteca11.jar"
+	]
 }
