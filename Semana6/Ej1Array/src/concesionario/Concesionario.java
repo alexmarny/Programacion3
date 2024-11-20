@@ -1,21 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package concesionario;
 
 import modelo.Coche;
 import com.coti.tools.Esdia;
 
-/**
- *
- * @author alfonso
- */
-public class Concesionario {
 
-    /**
-     * @param args the command line arguments
-     */
+public class Concesionario {
     public static void main(String[] args) {
 
         boolean flag = false;
