@@ -60,7 +60,7 @@ public class Persona {
 			double peso = Double.parseDouble(persona.getPeso());
 			double altura = Double.parseDouble(persona.getAltura());
 
-			double imc = peso / (altura * altura);
+			double imc = peso / ((altura * altura)/10000);
 
 			return "El IMC de " + persona.getNombre() + " es: " + imc;
 		} catch (NumberFormatException e) {
