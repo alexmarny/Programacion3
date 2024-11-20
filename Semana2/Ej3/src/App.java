@@ -1,21 +1,20 @@
 
-import java.util.Scanner;
+import com.coti.tools.Esdia;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Escriba u número entero mayor que 0:");
-		try (Scanner scanner = new Scanner(System.in)) {
+        
+		String promt = "Introduzca un número entero positivo: ";
+
 			int numero;
-			do {
-				while (!scanner.hasNextInt()) {
-					System.out.println("Eso no es un número entero. Inténtelo de nuevo:");
-					scanner.next();
+		
+			while (true) {
+				numero = Esdia.readInt(promt);
+				if (numero > 0) {
+					break;
 				}
-				numero = scanner.nextInt();
-				if (numero <= 0) {
-					System.out.println("El número debe ser mayor que 0. Inténtelo de nuevo:");
-				}
-			} while (numero <= 0);
+				System.out.println("Eso no es un número entero positivo. Inténtelo de nuevo:");
+			}
 			
 			System.out.printf("introduzca %d números de coma flotante\n", numero);
 
@@ -24,21 +23,24 @@ public class App {
 			float[] numerosFlotantes = new float[numero];
 
 			for(i = 0; i < numero; i++) {
-				while (!scanner.hasNextFloat()) {
-					System.out.println("Eso no es un número de coma flotante. Inténtelo de nuevo:");
-					scanner.next();
-				}
-				numerosFlotantes[i] = scanner.nextFloat();
-			} scanner.close();
+				numerosFlotantes[i] = Esdia.readFloat("Introduzca el numero " + (i + 1) + ": ");
+			}
 
 			System.out.println("Los números introducidos son:");
 
 			for (i = 0; i < numero; i++) {
 				System.out.printf("%2.2f ",numerosFlotantes[i]);
 			}
+
+			System.out.println("La media de los números introducidos es:");
+			float suma = 0;
+			for (i = 0; i < numero; i++) {
+				suma += numerosFlotantes[i];
+			}
+			System.out.printf("%2.2f", suma / numero);
+
 			System.out.println();
-			scanner.close();
-		}
+		
 		
 	}
 }

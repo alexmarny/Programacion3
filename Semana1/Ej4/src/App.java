@@ -1,6 +1,5 @@
 
 import java.util.Scanner;
-import java.io.Console;
 
 public class App {
 
