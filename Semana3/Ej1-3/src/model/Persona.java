@@ -1,4 +1,4 @@
-package Datos;
+package model;
 
 public class Persona {
 

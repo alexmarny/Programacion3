@@ -1,5 +1,6 @@
-import Datos.Persona;
 import com.coti.tools.Esdia;
+
+import model.Persona;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -60,6 +61,10 @@ public class App {
 	   String mayorAltura = Persona.getMayorAltura(personas);
 
 	   System.out.println("La persona con mayor altura es: " + mayorAltura);
+
+	   for (int i = 0; i < personas.length; i++) {
+		   System.out.println(Persona.cacularIMC(personas[i]));
+	   }
 
 	   
 	}
