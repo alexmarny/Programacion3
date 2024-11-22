@@ -123,4 +123,10 @@ public class Factura {
 		return String.format(Locale.ENGLISH, "%s%s%f%s%s%s%f", concepto, delimitador, descuento, delimitador, fecha, delimitador, importe, delimitador, nombreCliente, delimitador, nif, delimitador, direccion, delimitador, iva);
 	}
 
+	public double calcularValorMinimo() {
+		return importe * (1 - descuento) * (1 + iva);
+	}
+
+	
+
 }
