@@ -32,10 +32,6 @@ public class almacenModel {
 		return ingresosTotales;
 	}
 
-	public void mostrarResultados() {
-		System.out.println("Mostrando resultados...");
-	}
-
 	public int tablaVentas[][] = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
 	public int tablaPrecios[][] = { { 10, 20, 30 }, { 40, 50, 60 }, { 70, 80, 90 } };
 
@@ -46,10 +42,6 @@ public class almacenModel {
 
 	public int getTablaPrecios(int i, int j) {
 		return tablaPrecios[i][j];
-	}
-
-	public void mostrarResultados(int i, int j) {
-		System.out.println("El ingreso total es: " + calcularIngresosTotales());
 	}
 
 

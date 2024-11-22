@@ -52,12 +52,15 @@ public void leerTablaPrecios() {
 }
 
 
-public void calcularIngresosTotales() {
-	controller.calcularIngresosTotales();
+public int calcularIngresosTotales() {
+	int ingresosTotales = controller.calcularIngresosTotales();
+	return ingresosTotales;
 }
 
 public void mostrarResultados() {
-	controller.mostrarResultados();
+
+	System.out.println("El ingreso total es: " + calcularIngresosTotales());
+
 }
 
 public void setController(almacenController almacenController) {

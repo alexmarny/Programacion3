@@ -23,12 +23,8 @@ public class almacenController {
 		model.leerTablaPrecios();
 	}
 
-	public void calcularIngresosTotales() {
-		model.calcularIngresosTotales();
-	}
-
-	public void mostrarResultados() {
-		model.mostrarResultados();
+	public int calcularIngresosTotales() {
+		return model.calcularIngresosTotales();
 	}
 
 	public void run() {
