@@ -6,6 +6,13 @@
 	"configurations": [
 		{
 			"type": "java",
+			"name": "EjercicioCRUDArraysTiposPrimitivos",
+			"request": "launch",
+			"mainClass": "ejerciciocrudarrays.EjercicioCRUDArraysTiposPrimitivos",
+			"projectName": "Programacion3_b97d17a1"
+		},
+		{
+			"type": "java",
 			"name": "Concesionario",
 			"request": "launch",
 			"mainClass": "concesionario.Concesionario",
