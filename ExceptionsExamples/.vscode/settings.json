@@ -1,0 +1,6 @@
+{
+	"java.project.referencedLibraries": [
+		"lib/**/*.jar",
+		"/home/alexmarny/practicaFinal/biblioteca11.jar"
+	]
+}
