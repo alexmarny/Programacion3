@@ -1,7 +1,10 @@
 package view;
 
 import static com.coti.tools.Esdia.*;
+<<<<<<< HEAD
 import controller.Controller;
+=======
+>>>>>>> 5dec3e4 (Agregar configuración de proyecto y ejemplos de serialización en Java)
 import java.util.List;
 import model.Alumno;
 
